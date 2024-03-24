@@ -10,7 +10,7 @@
     width: 100%;
     height: 100vh;
     background: linear-gradient(135deg, #26648e, #53d2dc);
-    padding: 10px;
+    padding: 1rem;
 }
 
 .app {
@@ -124,4 +124,19 @@ button {
 #list-container li span:hover {
     background: #53d2dc;
     opacity: 0.5;
+}
+
+@media only screen and (max-width: 430px) {
+    .app h2 {
+        font-size: 1.7rem;
+    }
+    
+    .app h2 img {
+        width: 30px;
+    }
+
+    #input-box {
+        width: 10rem;
+        padding: 10px;
+    }
 }
