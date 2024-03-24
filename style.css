@@ -3,12 +3,14 @@
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
     box-sizing: border-box;
+    
 }
 /* #4f8fc0
 #ffe3b3 */
 .container {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     background: linear-gradient(135deg, #26648e, #53d2dc);
     padding: 1rem;
 }
