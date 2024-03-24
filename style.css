@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+/* #4f8fc0
+#ffe3b3 */
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #26648e, #53d2dc);
+    padding: 10px;
+}
+
+.app {
+    background: #ffe3b3;
+    /* width: 100%; */
+    max-width: 540px;
+    border-radius: 10px;
+    margin:100px auto 20px;
+    padding: 2rem;
+
+}
+
+.app h2 {
+    color: #4f8fc0;
+    /* color: #26648e; */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+.app h2 img {
+    width: 40px;
+}
+
+.input {
+    /* background: #26648e; */
+    background: #53d2dc;
+    /* opacity: 0.8; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px;
+    padding-left: 1rem;
+    margin: 2rem 0rem;
+}
+
+#input-box {
+    background: transparent;
+    width: 21rem;
+    border: none;
+    outline: none;
+    color: #ffe3b3;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+button {
+    background: #26648e;
+    color: #ffe3b3;
+    padding: 15px 40px;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+#list-container li{
+    list-style: none;
+    /* font-size: 1.2rem; */
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    color: #26648e;
+}
+
+#list-container li::before {
+    content: '';
+    background-image: url(assets/uncheck.png);
+    background-size: cover;
+    /* background-position: center; */
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    /* color: #26648e; */
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+#list-container li.checked::before {
+    background-image: url(assets/check-mark.png);
+    width: 40px;
+    height: 40px;
+    top: 1px;
+    left: 1px;
+}
+
+#list-container li span {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    top: 5px;
+    font-size: 1.5rem;
+    color: #26648e;
+    /* text-align: center; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#list-container li span:hover {
+    background: #53d2dc;
+    opacity: 0.5;
+}
